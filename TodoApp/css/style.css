@@ -1,0 +1,144 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+/* Todo input styles */
+#addTodo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#createTodoBTN {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#createTodoBTN:hover {
+    background-color: #45a049;
+}
+
+/* Todo list styles */
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list li span {
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #333;
+}
+
+.removeBTN {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.removeBTN:hover {
+    background-color: #e60000;
+}
+
+/* Completed list styles */
+.complated-list {
+    overflow: hidden;
+}
+
+.active-hide {
+    height: 0;
+}
+
+#hideTodo {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 187, 0);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hideTodo:hover {
+    background-color: rgb(255, 123, 0);
+}
+
+/* Remove all completed todos button styles */
+#complatedRemoveAll,
+#removeAll {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 89, 0);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#complatedRemoveAll:hover,
+#removeAll:hover {
+    background-color: rgb(255, 111, 0);
+}
+
+/* Todo content styles */
+.todoContent {
+    display: flex;
+    align-items: center;
+}
+
+.todoContent span {
+    margin-left: 1vw;
+}
+
+.todoContent p {
+    color: #4CAF50;
+}
